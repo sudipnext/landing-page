@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Kanit:wght@300&family=Shizuru&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    /* font-family: 'Shizuru', cursive; */
+    
 }
 
 ul {
@@ -19,6 +25,8 @@ a {
     font-weight: bold;
 }
 body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
    
     /*background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%); */
    
@@ -28,19 +36,21 @@ body{
 
 /* NAVBAR */
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;    
     width: 100%;
     justify-content: space-between;
     padding: 20px;
-    color: royalblue;
+    color: rgb(255, 255, 255);
 }
 .nav-links {
     display: flex;
-    align-items: center;    
+    align-items: center;
+    font-weight: bold;    
 }
+
 .nav-links li {
     cursor: pointer;    
     margin: 0 30px;
@@ -49,7 +59,7 @@ body{
 .menu-btn{
     position: absolute;
     top: 30px;
-    left: 90%;
+    left: 85%;
     display: none;
     
 }
@@ -76,14 +86,14 @@ svg {
 
   svg path {
     fill: none;
-    stroke: #de4daa;
+    stroke: #d0ff00;
     stroke-width: 5px;
   }
 /* end-animated-hamburger-menu */
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url('di9KMgbi7.jpg');
+    background-image: url('./background.png.jpg');
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -125,6 +135,7 @@ header {
 
 .logo {
     max-width: 50%;
+    color: greenyellow;
 }
 .menu-btn{
     position: absolute;
@@ -153,13 +164,13 @@ header {
         background-color: #1fd1f9;
         color: whitesmoke;
         background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
-
         margin-top: -900px;
         transition: 0.5s ease;
     }
     .mobile-menu{
         margin-top: 0px;
-        border-top-left-radius: 60%;
+        /* border-top-left-radius: 10%; */
+        border-top-right-radius: 40%;
        
     }
     .nav-links li {
@@ -167,7 +178,29 @@ header {
     }
     .menu-btn{
         display: block;
+        
     }
+    .row .col img{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 50%;
+    }
+    .row{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 100%;
+    }
+    section .row .col a{
+         position: relative;    
+        
+    }
+
+
+
 }
 /* our team */
 section{
@@ -190,6 +223,7 @@ section{
     flex-direction: column;
     align-items: center;
     width: 80%;
+    border-radius: 50%;
 }
 /* .events .row{
     margin-top: 50px;
